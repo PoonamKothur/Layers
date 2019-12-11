@@ -5,8 +5,3 @@ provider:
   runtime: nodejs10.x
   timeout: 30
   region: ${opt:region, 'ap-south-1'}
-
-layers:
-  MomentLayer:
-    path: nodejs
-    description: "moment dependencies"
