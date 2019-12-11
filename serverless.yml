@@ -1,0 +1,10 @@
+service: layer-moment
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+layers:
+  MomentLayer:
+    path: nodejs
+    description: "moment dependencies"
