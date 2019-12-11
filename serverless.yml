@@ -2,7 +2,9 @@ service: layer-moment
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs10.x
+  timeout: 30
+  region: ${opt:region, 'ap-south-1'}
 
 layers:
   MomentLayer:
